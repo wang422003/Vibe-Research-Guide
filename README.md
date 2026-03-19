@@ -16,6 +16,10 @@
   <small>🇨🇳 中文 · 🇺🇸 English · 🇰🇷 한국어 · 🇯🇵 日本語 · 🇩🇪 Deutsch · 🇫🇷 Français · 🇪🇸 Español · 🇮🇹 Italiano · 🇵🇹 Português · 🇸🇦 العربية · 🇹🇭 ไทย · 🇻🇳 Tiếng Việt · 🇷🇺 Русский</small>
 </p>
 
+<p align="center">
+  <img src="files/images/vibe_research_guide_image_1.png" alt="Vibe Research Guide Overview" width="90%">
+</p>
+
 ---
 
 ### 📢 News｜项目进展
@@ -35,6 +39,10 @@
 **EN**: Vibe Research studies how LLM-based agents can support or automate the full research loop: finding ideas, planning experiments, writing code, synthesizing literature, and validating scientific insights.
 
 **中文**：Vibe Research 关注 LLM Agent 如何支持或自动化完整科研流程——从 idea 发现、实验规划与实现，到文献综合和科研结论验证。
+
+<p align="center">
+  <img src="files/images/_34_Vibe_Research_AI_assistant_idealiteratureexperimentcoderesultpaperLLM_based_agents__image_1.png" alt="Vibe Research: AI assistant workflow (idea → literature → experiment → code → result → paper)" width="85%">
+</p>
 
 ### (1.2) How to Use This Guide - 如何使用这份指南
 
@@ -181,6 +189,10 @@ flowchart TD
 ## 🧰 (4) Practical Tools - 实用工具与平台
 
 > 从零代码的 AI 搜索引擎到可部署的开源 Agent 框架，帮你快速找到适合自己工作流的工具组合。
+
+<p align="center">
+  <img src="files/images/claw_ecosystem.jpg" alt="CLAW Ecosystem - Vibe Research tools and platforms" width="90%">
+</p>
 
 - [完整工具列表与选型指南 →](./topics/tools.md)
 
