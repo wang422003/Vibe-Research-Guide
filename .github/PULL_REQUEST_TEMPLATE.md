@@ -13,7 +13,7 @@
 
 ## Checklist
 
-- [ ] I confirmed this is in scope for Vibe Research Starter Packet.
+- [ ] I confirmed this is in scope for Vibe Research Guide.
 - [ ] I checked for duplicates in `README.md`.
 - [ ] I used concise and objective descriptions.
 - [ ] I verified links are accessible.

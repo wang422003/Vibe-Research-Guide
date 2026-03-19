@@ -1,6 +1,6 @@
 # Curation Guidelines
 
-This document defines how resources are selected and maintained in the Vibe Research Starter Packet.
+This document defines how resources are selected and maintained in the Vibe Research Guide.
 
 ## Scope
 
