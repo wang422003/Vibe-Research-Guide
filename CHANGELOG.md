@@ -4,7 +4,10 @@ All notable updates to this guide are documented in this file.
 
 ## 2026-W13
 
-- Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw); expanded to 30+ papers across 9 topic files.
+- Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist).
+- Added Deep Research tools (OpenAI/Gemini/Perplexity), OpenAI Prism, MCP Servers for research.
+- Switched all content to English as default language.
+- Expanded to 35+ papers across 9 topic files.
 
 ## 2026-W12 (Reorganization)
 

@@ -8,6 +8,15 @@ Automate the research workflow with LLM Agents: literature review → idea gener
 
 You don't need to be an AI expert — you just need to use the right tools.
 
+### Vibe Research vs Deep Research
+
+| | Traditional Research | Deep Research | Vibe Research |
+|---|---|---|---|
+| **Who leads** | Human | Human (AI assists) | AI (human oversees) |
+| **Tools** | Google Scholar, manual reading | Gemini / OpenAI / Perplexity Deep Research | InnoClaw, FARS, EvoScientist |
+| **AI role** | None | Search, summarize, analyze | Full pipeline: idea → experiment → paper |
+| **Example** | Read 50 papers manually | AI synthesizes 50 papers into a report | AI generates ideas, runs experiments, writes paper |
+
 ---
 
 ## Quick Start Routes

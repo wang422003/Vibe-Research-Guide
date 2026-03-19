@@ -34,7 +34,7 @@ This repo serves two audiences: **practitioners** (fastest way to get started) a
 | 🔵 **Developer / Builder** | [Tools & Platforms](./topics/tools.md) | [Systems](./topics/systems.md) · [Experiment](./topics/experiment.md) |
 | 🔴 **Researcher** | [Surveys](./topics/surveys.md) | [Ideation](./topics/ideation.md) · [Benchmarks](./topics/benchmarks.md) |
 
-> Only have 5 minutes? Install [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) or [ResearchClaw](https://github.com/ymx10086/ResearchClaw) and try it out.
+> Only have 5 minutes? Install [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) and try it out.
 
 ---
 
@@ -46,6 +46,7 @@ This repo serves two audiences: **practitioners** (fastest way to get started) a
 | **ResearchClaw** | Personal AI research assistant (CLI / Web / Slack) | [GitHub](https://github.com/ymx10086/ResearchClaw) |
 | **FARS (Analemma)** | Fully automated research system (Fudan MOSS team) | [GitHub](https://github.com/fars-analemma) · [Website](https://analemma.ai/) |
 | **AI-Scientist** | End-to-end research automation | [GitHub](https://github.com/SakanaAI/AI-Scientist) |
+| **EvoScientist** | Self-evolving multi-agent AI scientist | [GitHub](https://github.com/EvoScientist/EvoScientist) |
 | **Orchestra** | AI-for-Science cloud platform | [Website](https://www.orchestra-research.com/) |
 | **OpenClaw** | Agent skill ecosystem | [Docs](https://docs.openclaw.ai/) |
 
@@ -62,12 +63,12 @@ More tools & comparisons: [→ Tools & Platforms](./topics/tools.md)
 | 🚀 **Getting Started** | 5-min demo → 30-min agent deployment → full automation | [→ Getting Started](./topics/getting-started.md) |
 | 🧰 **Tools & Platforms** | Core platforms, literature tools, writing aids, experiment tools | [→ Tools & Platforms](./topics/tools.md) |
 
-### Paper Index (30+ papers)
+### Paper Index (35+ papers)
 
 | Topic | Core Question | Papers | Link |
 |---|---|---|---|
 | 📄 **Surveys** | Landscape & evolution of the field | 5 | [→ Surveys](./topics/surveys.md) |
-| ⚙️ **Systems** | How to design end-to-end research systems | 5 | [→ Systems](./topics/systems.md) |
+| ⚙️ **Systems** | How to design end-to-end research systems | 6 | [→ Systems](./topics/systems.md) |
 | 💡 **Ideation** | Can LLMs generate novel ideas | 6 | [→ Ideation](./topics/ideation.md) |
 | 📚 **Synthesis** | How to synthesize literature at scale | 5 | [→ Synthesis](./topics/synthesis.md) |
 | 🧪 **Experiment** | How agents automate experiments | 4 | [→ Experiment](./topics/experiment.md) |
@@ -115,7 +116,7 @@ Submit resources via [Resource Suggestion](https://github.com/SpectrAI-Initiativ
 <details>
 <summary><b>Changelog</b></summary>
 
-- **2026-W13**: Added core tools (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw); expanded to 30+ papers across 9 topic files
+- **2026-W13**: Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist); added Deep Research tools, OpenAI Prism, MCP Servers; switched all content to English; expanded to 35+ papers across 9 topic files
 - **2026-W12**: Hub-and-spoke architecture reorganization
 - **2026-W12**: Initial public release
 

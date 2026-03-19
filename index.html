@@ -80,8 +80,8 @@
 <body>
   <div class="lang-bar">
     <span id="lang-label">Language / 语言:</span>
-    <button class="lang-btn" data-lang="en">English</button>
-    <button class="lang-btn active" data-lang="zh">中文</button>
+    <button class="lang-btn active" data-lang="en">English</button>
+    <button class="lang-btn" data-lang="zh">中文</button>
     <button class="lang-btn" data-lang="ko">한국어</button>
     <button class="lang-btn" data-lang="ja">日本語</button>
     <button class="lang-btn" data-lang="de">Deutsch</button>
@@ -95,8 +95,8 @@
     <button class="lang-btn" data-lang="ru">Русский</button>
   </div>
 
-  <div id="content-en" class="content" data-lang="en"></div>
-  <div id="content-zh" class="content active" data-lang="zh"></div>
+  <div id="content-en" class="content active" data-lang="en"></div>
+  <div id="content-zh" class="content" data-lang="zh"></div>
   <div id="content-ko" class="content" data-lang="ko"></div>
   <div id="content-ja" class="content" data-lang="ja"></div>
   <div id="content-de" class="content" data-lang="de"></div>
@@ -273,18 +273,22 @@
       { title: "FIRE-Bench: Evaluating Agents on the Rediscovery of Scientific Insights", url: "https://arxiv.org/abs/2602.02905", type: "Benchmark" },
       { title: "AstaBench: Rigorous Benchmarking of AI Agents with a Scientific Research Suite", url: "https://arxiv.org/abs/2510.21652", type: "Benchmark" },
       { title: "MLE-bench: Evaluating Machine Learning Agents on ML Engineering", url: "https://arxiv.org/abs/2410.07095", type: "Benchmark" },
-      { title: "RE-Bench: Evaluating AI R&D Capabilities vs Human Experts", url: "https://arxiv.org/abs/2411.15671", type: "Benchmark" }
+      { title: "RE-Bench: Evaluating AI R&D Capabilities vs Human Experts", url: "https://arxiv.org/abs/2411.15671", type: "Benchmark" },
+      { title: "EvoScientist: Multi-Agent Evolving AI Scientists for End-to-End Scientific Discovery", url: "https://arxiv.org/abs/2603.08127", type: "System" }
     ];
 
     const projects = [
+      { name: "InnoClaw", url: "https://github.com/SpectrAI-Initiative/InnoClaw" },
+      { name: "ResearchClaw", url: "https://github.com/ymx10086/ResearchClaw" },
+      { name: "FARS (Analemma)", url: "https://github.com/fars-analemma" },
       { name: "The AI Scientist (Sakana AI)", url: "https://github.com/SakanaAI/AI-Scientist" },
+      { name: "EvoScientist", url: "https://github.com/EvoScientist/EvoScientist" },
+      { name: "Orchestra", url: "https://www.orchestra-research.com/" },
       { name: "OpenScholar (Allen AI)", url: "https://github.com/allenai/OpenScholar" },
       { name: "PaperQA2 (Future House)", url: "https://github.com/Future-House/paper-qa" },
       { name: "Agent Laboratory", url: "https://github.com/SamuelSchmidgall/AgentLaboratory" },
       { name: "OpenHands", url: "https://github.com/All-Hands-AI/OpenHands" },
-      { name: "SWE-agent (Princeton)", url: "https://github.com/princeton-nlp/SWE-agent" },
-      { name: "MetaGPT / Data Interpreter", url: "https://github.com/geekan/MetaGPT" },
-      { name: "Papers with Code: AI for Science", url: "https://paperswithcode.com/task/ai-for-science" }
+      { name: "SWE-agent (Princeton)", url: "https://github.com/princeton-nlp/SWE-agent" }
     ];
 
     const otherLangs = {
@@ -418,7 +422,7 @@ researcher --> benchmark[BenchmarkEvaluation]</code></pre>
         <ul>${get('contributeItems').map(i => `<li>${i}</li>`).join('')}</ul>
         <h2>${get('changelog')}</h2>
         <p>${get('changelogDesc')}</p>
-        <p>2026-W13: Major content expansion — Getting Started, Tools, Experiment, Writing & Review sections added; 30+ papers total. 2026-W12: Initial public release with hub-and-spoke architecture.</p>
+        <p>2026-W13: Added core tools (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist); added Deep Research tools, OpenAI Prism, MCP Servers; switched all content to English; expanded to 35+ papers across 9 topic files. 2026-W12: Initial public release with hub-and-spoke architecture.</p>
         <h2 id="principles">${get('principles')}</h2>
         <ol>${get('principlesItems').map(i => `<li>${i}</li>`).join('')}</ol>
         <h2 id="license">${get('license')}</h2>

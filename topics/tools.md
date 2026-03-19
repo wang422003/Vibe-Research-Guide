@@ -14,6 +14,7 @@ Agent systems and platforms purpose-built for automated scientific research:
 | **ResearchClaw** | Personal research assistant | [GitHub](https://github.com/ymx10086/ResearchClaw) | Open-source, CLI/Web/Slack, integrated research/data/general tools |
 | **FARS (Analemma)** | Fully automated research system | [GitHub](https://github.com/fars-analemma) · [Website](https://analemma.ai/) | Fudan MOSS team, 4 modules end-to-end (Ideation→Planning→Experiment→Writing) |
 | **AI-Scientist** | End-to-end research automation | [GitHub](https://github.com/SakanaAI/AI-Scientist) | Sakana AI, idea→experiment→paper→review pipeline |
+| **EvoScientist** | Self-evolving AI scientist | [GitHub](https://github.com/EvoScientist/EvoScientist) | Multi-agent with persistent memory, outperforms 7 SOTA systems |
 | **Orchestra** | AI-for-Science platform | [Website](https://www.orchestra-research.com/) | Cloud-based, no local deployment needed |
 | **Agent Laboratory** | Human-AI collaborative research | [GitHub](https://github.com/SamuelSchmidgall/AgentLaboratory) | Human-in-the-loop, researcher stays involved throughout |
 
@@ -54,6 +55,24 @@ Agent systems and platforms purpose-built for automated scientific research:
 | OpenScholar | [GitHub](https://github.com/allenai/OpenScholar) | Allen AI, large-scale literature synthesis | Free |
 | Perplexity | [website](https://www.perplexity.ai/) | AI search engine with citations | Free |
 
+## Deep Research Tools
+
+| Tool | Link | Highlights | Cost |
+|---|---|---|---|
+| OpenAI Deep Research | [website](https://openai.com/) | o3-powered multi-step reasoning, structured reports from many sources | ChatGPT Pro |
+| Gemini Deep Research | [website](https://gemini.google.com/) | Google, leverages Google Scholar, comprehensive analysis | Gemini Advanced |
+| Perplexity Deep Research | [website](https://www.perplexity.ai/) | Free, academic focus mode, multi-source synthesis | Free |
+
+## MCP Servers for Research
+
+Model Context Protocol (MCP) servers that integrate academic search into AI workflows:
+
+| Server | Link | Highlights |
+|---|---|---|
+| Semantic Scholar MCP | [GitHub](https://github.com/hamid-vakilzadeh/AIRA-SemanticScholar) | Search papers, analyze citations, paper recommendations |
+| arXiv MCP Server | [GitHub](https://github.com/blazickjp/arxiv-mcp-server) | Search & retrieve arXiv papers with filtering by author, category, date |
+| PubMed MCP Server | [PulseMCP](https://www.pulsemcp.com/) | Biomedical literature search and retrieval |
+
 ## Writing & Review Aids
 
 | Tool | Link | Highlights | Cost |
@@ -61,6 +80,7 @@ Agent systems and platforms purpose-built for automated scientific research:
 | Writefull | [website](https://www.writefull.com/) | AI proofreading designed for academic writing | Free / Pro |
 | Paperpal | [website](https://paperpal.com/) | Backed by Springer Nature | Free / Pro |
 | Grammarly | [website](https://www.grammarly.com/) | General writing assistant with academic mode | Free |
+| OpenAI Prism | [website](https://openai.com/) | OpenAI for Science — ChatGPT embedded in a scientific text editor | Free |
 
 ## Experiment & Code Aids
 
