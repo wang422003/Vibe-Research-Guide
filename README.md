@@ -22,15 +22,41 @@
 
 ---
 
-## What is Vibe Research
+<div align="center">
 
-Automate the research workflow with LLM Agents: literature review → idea generation → experiment execution → paper writing → peer review.
+### AI Agents For Scientific Discovery, Research Execution, And The New Claw Ecosystem
 
-This repo is a **hub page**: start here to choose the right track, then move into the topic pages for details.
+Automate the research loop with LLM agents: literature review → idea generation → experiment execution → paper writing → peer review.
+
+This repo is a **landing page for the field**: use it to choose the right track, then move into the topic pages for detail.
+
+**Start here**: [Getting Started](./topics/getting-started.md) · [Tools & Platforms](./topics/tools.md) · [Claw Park](./topics/claw-park.md) · [Vibe Coding](./topics/vibe-coding.md)
+
+</div>
 
 <p align="center">
   <img src="files/images/_34_Vibe_Research_AI_assistant_idealiteratureexperimentcoderesultpaperLLM_based_agents__image_1.png" alt="Vibe Research: AI assistant workflow (idea → literature → experiment → code → result → paper)" width="85%">
 </p>
+
+## At A Glance
+
+<table>
+  <tr>
+    <td width="33%">
+      <strong>Core Question</strong><br><br>
+      How far can AI move from research assistant to research operator?<br><br>
+      Focus: literature, ideation, experiment, writing, and evaluation.
+    </td>
+    <td width="33%">
+      <strong>What Changed In 2026</strong><br><br>
+      Research copilots got stronger, autonomous research systems got more credible, and Vibe Coding became the execution layer.
+    </td>
+    <td width="33%">
+      <strong>How To Use This Repo</strong><br><br>
+      Treat the README as a map. Treat the topic pages as the actual guide.
+    </td>
+  </tr>
+</table>
 
 ## 2026 Landscape Snapshot
 
@@ -46,12 +72,32 @@ This guide keeps **Vibe Research** as the core topic, then adds separate section
 
 ## Choose a Path
 
-| Who you are | Start here | Then read |
-|---|---|---|
-| 🟢 **New to Vibe Research** | [Getting Started](./topics/getting-started.md) | [Tools & Platforms](./topics/tools.md) |
-| 🔵 **Developer / Builder** | [Tools & Platforms](./topics/tools.md) | [Vibe Coding](./topics/vibe-coding.md) · [Systems](./topics/systems.md) · [Experiment](./topics/experiment.md) |
-| 🔴 **Researcher** | [Surveys](./topics/surveys.md) | [Ideation](./topics/ideation.md) · [Benchmarks](./topics/benchmarks.md) |
-| 🟣 **Creator / Operator** | [Vibe Anything](./topics/vibe-anything.md) | [Vibe Coding](./topics/vibe-coding.md) · [Tools & Platforms](./topics/tools.md) |
+<table>
+  <tr>
+    <td width="50%">
+      <strong>🟢 New to Vibe Research</strong><br><br>
+      Start: <a href="./topics/getting-started.md">Getting Started</a><br>
+      Then: <a href="./topics/tools.md">Tools & Platforms</a>
+    </td>
+    <td width="50%">
+      <strong>🔵 Developer / Builder</strong><br><br>
+      Start: <a href="./topics/tools.md">Tools & Platforms</a><br>
+      Then: <a href="./topics/vibe-coding.md">Vibe Coding</a> · <a href="./topics/systems.md">Systems</a> · <a href="./topics/experiment.md">Experiment</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>🔴 Researcher</strong><br><br>
+      Start: <a href="./topics/surveys.md">Surveys</a><br>
+      Then: <a href="./topics/ideation.md">Ideation</a> · <a href="./topics/benchmarks.md">Benchmarks</a>
+    </td>
+    <td width="50%">
+      <strong>🟣 Creator / Operator</strong><br><br>
+      Start: <a href="./topics/vibe-anything.md">Vibe Anything</a><br>
+      Then: <a href="./topics/vibe-coding.md">Vibe Coding</a> · <a href="./topics/tools.md">Tools & Platforms</a>
+    </td>
+  </tr>
+</table>
 
 > Only have 5 minutes? Install [InnoClaw](https://github.com/SpectrAI-Initiative/InnoClaw) and try it out.
 
@@ -71,16 +117,18 @@ This guide keeps **Vibe Research** as the core topic, then adds separate section
 | **Execution layer** | [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) · [Codex](https://github.com/openai/codex) · [Cursor Background Agents](https://docs.cursor.com/en/background-agent) · [GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent) | The coding and repo workflow layer that increasingly powers research execution |
 | **Adjacent prompt-native tools** | [v0](https://v0.dev/docs) · [Lovable](https://docs.lovable.dev/) · [Replit Agent](https://docs.replit.com/replitai/agent) | Useful for prototyping, but not the core of Vibe Research |
 
-Deep dive by map instead of by list:
-
-- [→ Tools & Platforms](./topics/tools.md)
-- [→ Claw Park](./topics/claw-park.md)
-- [→ Vibe Coding](./topics/vibe-coding.md)
-- [→ Vibe Anything](./topics/vibe-anything.md)
+<table>
+  <tr>
+    <td width="25%" align="center"><strong><a href="./topics/tools.md">→ Tools & Platforms</a></strong></td>
+    <td width="25%" align="center"><strong><a href="./topics/claw-park.md">→ Claw Park</a></strong></td>
+    <td width="25%" align="center"><strong><a href="./topics/vibe-coding.md">→ Vibe Coding</a></strong></td>
+    <td width="25%" align="center"><strong><a href="./topics/vibe-anything.md">→ Vibe Anything</a></strong></td>
+  </tr>
+</table>
 
 ---
 
-## Topics
+## Topic Map
 
 ### Core Guides
 
@@ -103,6 +151,27 @@ Deep dive by map instead of by list:
 | 🧪 **Experiment** | How agents automate experiments | 4 | [→ Experiment](./topics/experiment.md) |
 | ✍️ **Writing & Review** | LLM-assisted writing & peer review | 4 | [→ Writing & Review](./topics/writing-review.md) |
 | 📊 **Benchmarks** | How to evaluate research agents | 5 | [→ Benchmarks](./topics/benchmarks.md) |
+
+---
+
+## Reading Modes
+
+<table>
+  <tr>
+    <td width="33%">
+      <strong>Read The Field</strong><br><br>
+      <a href="./topics/surveys.md">Surveys</a> · <a href="./topics/systems.md">Systems</a> · <a href="./topics/benchmarks.md">Benchmarks</a>
+    </td>
+    <td width="33%">
+      <strong>Build The Stack</strong><br><br>
+      <a href="./topics/tools.md">Tools & Platforms</a> · <a href="./topics/claw-park.md">Claw Park</a> · <a href="./topics/vibe-coding.md">Vibe Coding</a>
+    </td>
+    <td width="33%">
+      <strong>Prototype Beyond Research</strong><br><br>
+      <a href="./topics/vibe-anything.md">Vibe Anything</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -150,7 +219,7 @@ Submit resources via [Resource Suggestion](https://github.com/SpectrAI-Initiativ
 <summary><b>Changelog</b></summary>
 
 - **2026-W13**: Added core tools & platforms (InnoClaw, ResearchClaw, FARS, Orchestra, OpenClaw, EvoScientist); added Deep Research tools, OpenAI Prism, MCP Servers; switched all content to English; expanded to 35+ papers across 9 topic files
-- **2026-W12**: Simplified README into a cleaner hub page, added Claw Park, and aligned the guide around ecosystem maps instead of repeated project lists
+- **2026-W12**: Redesigned README into a stronger landing page with cleaner hierarchy, card-style path selection, and a more visual ecosystem map
 - **2026-W12**: Hub-and-spoke architecture reorganization
 - **2026-W12**: Initial public release
 

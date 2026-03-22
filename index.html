@@ -6,13 +6,16 @@
   <title>Vibe Research Guide</title>
   <style>
     :root {
-      --bg: #ffffff;
-      --card: #f6f8fa;
-      --border: #d0d7de;
-      --text: #24292f;
-      --muted: #57606a;
-      --accent: #0969da;
-      --accent-soft: #dbeafe;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --card: #f8fbff;
+      --border: #d4ddea;
+      --text: #142033;
+      --muted: #5c6b80;
+      --accent: #0a66c2;
+      --accent-2: #009688;
+      --accent-soft: linear-gradient(135deg, #e8f0ff 0%, #eefbf7 100%);
+      --hero: linear-gradient(135deg, #0f172a 0%, #123f73 45%, #127f78 100%);
     }
     * { box-sizing: border-box; }
     body {
@@ -20,7 +23,7 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.65;
-      max-width: 980px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 2rem;
     }
@@ -30,9 +33,11 @@
       gap: 0.5rem;
       margin-bottom: 2rem;
       padding: 1rem;
-      background: var(--card);
-      border-radius: 10px;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
       border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
     }
     .lang-bar span {
       font-size: 0.9rem;
@@ -43,11 +48,12 @@
     .lang-btn {
       padding: 0.45rem 0.85rem;
       border: 1px solid var(--border);
-      background: #fff;
+      background: rgba(255,255,255,0.88);
       color: var(--text);
       border-radius: 999px;
       cursor: pointer;
       font-size: 0.9rem;
+      font-weight: 600;
     }
     .lang-btn.active {
       background: var(--accent);
@@ -56,11 +62,10 @@
     }
     .content { display: none; }
     .content.active { display: block; }
-    h1 { font-size: 2.2rem; margin: 0 0 0.5rem; }
+    h1 { font-size: 2.6rem; margin: 0 0 0.5rem; line-height: 1.1; }
     h2 {
       font-size: 1.45rem;
-      margin-top: 2rem;
-      border-bottom: 1px solid var(--border);
+      margin-top: 2.4rem;
       padding-bottom: 0.35rem;
     }
     h3 { font-size: 1.1rem; margin-top: 1.4rem; }
@@ -70,9 +75,10 @@
     blockquote {
       margin: 1rem 0;
       padding: 0.8rem 1rem;
-      border-left: 4px solid var(--accent);
-      background: #fafcff;
+      border-left: 4px solid var(--accent-2);
+      background: rgba(255,255,255,0.72);
       color: var(--muted);
+      border-radius: 0 14px 14px 0;
     }
     ul, ol { padding-left: 1.4rem; }
     table {
@@ -86,21 +92,117 @@
       text-align: left;
       vertical-align: top;
     }
-    th { background: var(--card); }
+    th { background: #eef4fb; }
     .badges { margin: 1rem 0; }
+    .hero {
+      background: var(--hero);
+      color: #fff;
+      padding: 2rem;
+      border-radius: 24px;
+      box-shadow: 0 24px 70px rgba(15, 23, 42, 0.16);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 220px;
+      height: 220px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+      filter: blur(2px);
+    }
+    .hero p, .hero a { color: rgba(255,255,255,0.92); }
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .hero-link {
+      display: inline-block;
+      padding: 0.6rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.22);
+      color: #fff;
+      font-weight: 600;
+    }
+    .hero-link:hover { text-decoration: none; background: rgba(255,255,255,0.22); }
+    .section-intro {
+      color: var(--muted);
+      max-width: 760px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .card {
+      grid-column: span 12;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1rem 1.1rem;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+    }
+    .card h3 { margin-top: 0; margin-bottom: 0.35rem; }
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      padding: 0.22rem 0.55rem;
+      border-radius: 999px;
+      background: #e7f0fb;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .cta-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      margin: 1rem 0 0;
+    }
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 0.9rem;
+      text-align: center;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+    }
     .callout {
       background: var(--accent-soft);
-      border: 1px solid #bfdbfe;
-      border-radius: 10px;
+      border: 1px solid #c7d8ef;
+      border-radius: 18px;
       padding: 1rem;
       margin: 1rem 0;
     }
     .section-note { color: var(--muted); }
+    @media (min-width: 720px) {
+      .span-4 { grid-column: span 4; }
+      .span-6 { grid-column: span 6; }
+      .span-3 { grid-column: span 3; }
+    }
+    @media (max-width: 820px) {
+      .cta-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      body { padding: 1rem; }
+      .hero { padding: 1.35rem; border-radius: 18px; }
+      h1 { font-size: 2rem; }
+      .cta-strip { grid-template-columns: 1fr; }
+    }
     [dir="rtl"] { text-align: right; }
     [dir="rtl"] ul, [dir="rtl"] ol { padding-left: 0; padding-right: 1.4rem; }
     [dir="rtl"] blockquote {
       border-left: none;
-      border-right: 4px solid var(--accent);
+      border-right: 4px solid var(--accent-2);
     }
   </style>
 </head>
@@ -140,16 +242,24 @@
     const translations = {
       en: {
         title: "Vibe Research Guide",
-        subtitle: "A curated multilingual guide for Vibe Research, Claw ecosystem navigation, Vibe Coding, and adjacent prompt-native workflows.",
+        subtitle: "A curated multilingual guide for Vibe Research, the Claw ecosystem, Vibe Coding, and adjacent prompt-native workflows.",
         quickstart: "Quick Start",
         quickstartSteps: [
           "If you are new to the field, start from Getting Started and Tools & Platforms.",
           "If you are comparing Claw projects, go straight to Claw Park.",
           "If you care about execution, read Vibe Coding after the main research pages."
         ],
+        heroLinks: ["./topics/getting-started.md", "./topics/tools.md", "./topics/claw-park.md", "./topics/vibe-coding.md"],
+        heroLabels: ["Getting Started", "Tools & Platforms", "Claw Park", "Vibe Coding"],
         toc: "Table of Contents",
         whatIs: "What is Vibe Research?",
         whatIsDesc: "Vibe Research studies how LLM-based agents can support or automate the research loop: literature review, idea generation, experiment execution, writing, and evaluation.",
+        glance: "At A Glance",
+        glanceCards: [
+          ["Core Question", "How far can AI move from research assistant to research operator?"],
+          ["2026 Shift", "Copilots got stronger, research systems got more credible, and coding agents became the execution layer."],
+          ["How To Use This Repo", "Treat this page as a map and the topic pages as the actual guide."]
+        ],
         snapshot: "2026 Landscape Snapshot",
         snapshotItems: [
           "Research copilots are getting stronger through Deep Research, NotebookLM-style source grounding, and scientific workspaces such as Prism.",
@@ -183,6 +293,12 @@
         clawSection: "Claw Park Preview",
         clawNote: "Use Claw Park when the names start to blur together. The key is to separate foundation, workspace, copilot, evolution, and autonomy layers.",
         featured: "Featured Projects",
+        readingModes: "Reading Modes",
+        readingModeCards: [
+          ["Read The Field", "Surveys · Systems · Benchmarks"],
+          ["Build The Stack", "Tools & Platforms · Claw Park · Vibe Coding"],
+          ["Prototype Beyond Research", "Vibe Anything"]
+        ],
         contribute: "How to Contribute",
         contributeItems: [
           "Suggest a resource via the Resource Suggestion issue template.",
@@ -203,9 +319,17 @@
           "如果你在比较不同 Claw 项目，直接看 Claw Park。",
           "如果你关心执行层，读完科研主线后再看 Vibe Coding。"
         ],
+        heroLinks: ["./topics/getting-started.md", "./topics/tools.md", "./topics/claw-park.md", "./topics/vibe-coding.md"],
+        heroLabels: ["入门", "工具与平台", "Claw Park", "Vibe Coding"],
         toc: "目录",
         whatIs: "什么是 Vibe Research？",
         whatIsDesc: "Vibe Research 研究 LLM Agent 如何支持或自动化科研闭环：文献综述、idea 生成、实验执行、论文写作与评测。",
+        glance: "快速理解",
+        glanceCards: [
+          ["核心问题", "AI 能在多大程度上从研究助手走向研究执行者？"],
+          ["2026 的变化", "copilot 更强了，研究系统更可信了，coding agent 成了执行层。"],
+          ["这个仓库怎么用", "把这个页面当地图，把 topic 页面当真正的指南。"]
+        ],
         snapshot: "2026 版图速览",
         snapshotItems: [
           "Research copilot 正在变强，Deep Research、NotebookLM 式溯源阅读和 Prism 这类科学写作空间正在加速文献综合。",
@@ -239,6 +363,12 @@
         clawSection: "Claw Park 预览",
         clawNote: "当你开始分不清各种 Claw 名字时，就看这个版块。关键是把基础层、workspace、copilot、evolution 和 autonomy 分开。",
         featured: "重点项目",
+        readingModes: "阅读模式",
+        readingModeCards: [
+          ["读懂这个领域", "Surveys · Systems · Benchmarks"],
+          ["搭建执行栈", "Tools & Platforms · Claw Park · Vibe Coding"],
+          ["做科研以外的原型", "Vibe Anything"]
+        ],
         contribute: "如何贡献",
         contributeItems: [
           "通过 Resource Suggestion issue 模板提交资源。",
@@ -294,28 +424,39 @@
       const guideRows = guideTracks.map(([topic, desc, link]) =>
         `<tr><td>${topic}</td><td>${desc}</td><td><a href="${link}">${link}</a></td></tr>`
       ).join("");
+      const glanceCards = getTranslation(lang, "glanceCards").map(([title, text]) =>
+        `<div class="card span-4"><span class="eyebrow">${title}</span><p>${text}</p></div>`
+      ).join("");
       const pathRows = getTranslation(lang, "pathRows").map(([role, start, then]) =>
-        `<tr><td>${role}</td><td><a href="${start}">${start}</a></td><td><a href="${then}">${then}</a></td></tr>`
+        `<div class="card span-6"><h3>${role}</h3><p><strong>Start:</strong> <a href="${start}">${start}</a></p><p><strong>Then:</strong> <a href="${then}">${then}</a></p></div>`
       ).join("");
       const ecosystemRows = getTranslation(lang, "ecosystemRows").map(([layer, examples, why]) =>
-        `<tr><td>${layer}</td><td>${examples}</td><td>${why}</td></tr>`
+        `<div class="card span-6"><span class="eyebrow">${layer}</span><p><strong>Representative:</strong> ${examples}</p><p>${why}</p></div>`
       ).join("");
 
       const clawRows = clawProjects.map(([name, summary, role, url]) =>
         `<tr><td><a href="${url}">${name}</a></td><td>${summary}</td><td>${role}</td></tr>`
       ).join("");
 
-      const featured = featuredProjects.map(([name, url]) => `<li><a href="${url}">${name}</a></li>`).join("");
+      const heroLinks = getTranslation(lang, "heroLinks").map((url, i) =>
+        `<a class="hero-link" href="${url}">${getTranslation(lang, "heroLabels")[i]}</a>`
+      ).join("");
+      const modeCards = getTranslation(lang, "readingModeCards").map(([title, text]) =>
+        `<div class="card span-4"><h3>${title}</h3><p>${text}</p></div>`
+      ).join("");
 
       return `
-        <div class="badges">
-          <a href="https://github.com/SpectrAI-Initiative/Vibe-Research-Guide/stargazers"><img src="https://img.shields.io/github/stars/SpectrAI-Initiative/Vibe-Research-Guide?style=social" alt="stars"></a>
-          <a href="https://github.com/SpectrAI-Initiative/Vibe-Research-Guide/commits/main"><img src="https://img.shields.io/github/last-commit/SpectrAI-Initiative/Vibe-Research-Guide" alt="last commit"></a>
-          <a href="https://github.com/SpectrAI-Initiative/Vibe-Research-Guide/issues"><img src="https://img.shields.io/github/issues/SpectrAI-Initiative/Vibe-Research-Guide" alt="issues"></a>
-          <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
+        <div class="hero">
+          <div class="badges">
+            <a href="https://github.com/SpectrAI-Initiative/Vibe-Research-Guide/stargazers"><img src="https://img.shields.io/github/stars/SpectrAI-Initiative/Vibe-Research-Guide?style=social" alt="stars"></a>
+            <a href="https://github.com/SpectrAI-Initiative/Vibe-Research-Guide/commits/main"><img src="https://img.shields.io/github/last-commit/SpectrAI-Initiative/Vibe-Research-Guide" alt="last commit"></a>
+            <a href="https://github.com/SpectrAI-Initiative/Vibe-Research-Guide/issues"><img src="https://img.shields.io/github/issues/SpectrAI-Initiative/Vibe-Research-Guide" alt="issues"></a>
+            <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT">
+          </div>
+          <h1>${getTranslation(lang, "title")}</h1>
+          <blockquote>${getTranslation(lang, "subtitle")}</blockquote>
+          <div class="hero-links">${heroLinks}</div>
         </div>
-        <h1>${getTranslation(lang, "title")}</h1>
-        <blockquote>${getTranslation(lang, "subtitle")}</blockquote>
 
         <h2>${getTranslation(lang, "quickstart")}</h2>
         <ol>${getTranslation(lang, "quickstartSteps").map(step => `<li>${step}</li>`).join("")}</ol>
@@ -336,20 +477,17 @@
         <h2 id="what">${getTranslation(lang, "whatIs")}</h2>
         <p>${getTranslation(lang, "whatIsDesc")}</p>
 
+        <h2>${getTranslation(lang, "glance")}</h2>
+        <div class="grid">${glanceCards}</div>
+
         <h2 id="snapshot">${getTranslation(lang, "snapshot")}</h2>
         <ul>${getTranslation(lang, "snapshotItems").map(item => `<li>${item}</li>`).join("")}</ul>
 
         <h2 id="paths">${getTranslation(lang, "paths")}</h2>
-        <table>
-          <tr><th>${getTranslation(lang, "pathRole")}</th><th>${getTranslation(lang, "pathStart")}</th><th>${getTranslation(lang, "pathThen")}</th></tr>
-          ${pathRows}
-        </table>
+        <div class="grid">${pathRows}</div>
 
         <h2 id="ecosystem">${getTranslation(lang, "ecosystem")}</h2>
-        <table>
-          <tr><th>Layer</th><th>Representative projects</th><th>Why it matters</th></tr>
-          ${ecosystemRows}
-        </table>
+        <div class="grid">${ecosystemRows}</div>
 
         <h2 id="guides">${getTranslation(lang, "guides")}</h2>
         <table>
@@ -369,7 +507,12 @@
         </table>
 
         <h2 id="featured">${getTranslation(lang, "featured")}</h2>
-        <ul>${featured}</ul>
+        <div class="cta-strip">
+          ${featuredProjects.map(([name, url]) => `<a class="cta-box" href="${url}">${name}</a>`).join("")}
+        </div>
+
+        <h2>${getTranslation(lang, "readingModes")}</h2>
+        <div class="grid">${modeCards}</div>
 
         <h2 id="contribute">${getTranslation(lang, "contribute")}</h2>
         <ul>${getTranslation(lang, "contributeItems").map(item => `<li>${item}</li>`).join("")}</ul>
